@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 32px;
+  margin: 27px auto 0px auto;
+}
+
+header .menu {
+  display: none;
+}
+
+header .logo {
+  width: 161px;
+  height: 32px;
+}
+
+header div {
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header li {
+  list-style: none;
+  cursor: pointer;
+}
+
+header li:hover,
+header li:active {
+  color: #ff6565;
+  transition: all 0.2s ease-in;
+}
+
+.main_part {
+  background-image: url(/headphones/images/headphones_hero_1.jpg);
+  background-position-x: center;
+  /* background-repeat: no-repeat; */
+  height: 800px;
+  margin-top: -59px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.main_part_details {
+  font-weight: bold;
+  width: 637px;
+  height: 313px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main_part_details h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.main_part_details h6 {
+  font-size: 16px;
+}
+
+.main_part_details button {
+  border-radius: 22px;
+  color: white;
+  font-weight: bold;
+  height: 44px;
+  width: 162px;
+  font-size: 14px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: tomato;
+  border: none;
+  margin: 3rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.main_part_details button:active,
+.main_part_details button:hover {
+  opacity: 0.9;
+}
+
+.main_part_details p {
+  font-weight: 400;
+}
+
+@media (width <= 768px) {
+  header {
+    width: 500px;
+    background-color: red;
+  }
+
+  header .menu {
+    display: flex;
+    order: 2;
+  }
+
+  .main_part {
+    background-position: center;
+  }
+
+  header ul {
+    display: none;
+  }
+}
+
+@media (width <= 376px) {
+  header {
+    width: 247px;
+    margin: 27px 0px 0px 21px;
+  }
+
+  header .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  header ul {
+    display: none;
+    background-color: rebeccapurple;
+  }
+
+  .main_part_details {
+    font-size: 16px;
+    width: 335px;
+  }
+}

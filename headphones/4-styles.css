@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 161px;
+  height: 32px;
+}
+
+footer {
+  height: 249px;
+  background-color: #071629;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+
+.footer_icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer_icons img {
+  width: 30px;
+  height: 30px;
+  padding: 0.7rem;
+  border-radius: 50px;
+}
+
+@media (width <= 376px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

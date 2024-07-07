@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  box-sizing: content-box;
 }
 header {
   background-color: transparent;
@@ -20,34 +19,37 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 53px;
-  }
-
-  li {
-    text-decoration: none;
-    list-style: none;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
+  z-index: 9999;
 }
 
-main {
-  background-color: #fff;
+ul {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  display: none;
 }
 
 .main_part {
   background-image: url("/css_advanced/background.png");
-  background-position: center;
-  color: #fff;
+  overflow: hidden;
+  color: #000000;
   height: 1093px;
   padding: 0 5rem;
 }

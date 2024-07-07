@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contact {
+  width: 335px;
+  height: 373px;
+  margin: 9rem auto 0rem auto;
+  color: black;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact div {
+  margin-bottom: 1.3rem;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 0.4rem;
+}
+
+@media (width <= 365px) {
+  .contact {
+    width: 315px;
+    margin: 0.9rem;
+  }
+}
